@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+ }
+ body {
+    margin: 0;
+    padding: 0;
+ }
+ .total {
+   height: 100vh;
+   max-width: 150rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+ .navigation {
+   position: relative;
+   min-height: 8rem;
+   background-color: #000000;
+ }
+ .navbar {
+   width: 100%;
+   background-color: #000000;
+   color: #ffffff;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   position: fixed;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   min-height: 6rem;
+ }
+ .awards {
+   font-family: 'Arsenal', sans-serif;
+   font-size: 3.25rem;
+   font-weight: 500;
+   text-align: left;
+   color: #ffffff;
+   padding-left: 3rem;
+   cursor: pointer;
+ }
+ .second-item {
+   display: flex;
+   justify-content: space-between;
+   width: 50%;
+   cursor: pointer;
+ }
+ .about_us,
+ .contact,
+ .sign_in {
+   font-family: 'Arsenal', sans-serif;
+   font-size: 1.86rem;
+   font-weight: 400;
+   font-style: normal;
+   cursor: pointer;
+ }
+ .sign_in {
+   padding-right: 3rem;
+ }
+ .competition {
+   font-family: 'Inter', sans-serif;
+   font-size: 1.86rem;
+   font-weight: 700;
+   text-align: left;
+   cursor: pointer;
+ }
+ .wrapper {
+    min-height: calc(100vh - 8rem);
+ }
+ .upper-part {
+    background-color: #000000;
+ }
+ .details {
+   width: 97%;
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 8rem;
+ }
+ .welcome_para {
+   width: 46%;
+   color: #ffffff;
+   margin-left: 3rem;
+   margin-top: 13rem;
+ }
+ .tittle {
+   font-family: 'Inter', sans-serif;
+   font-size: 3.5rem;
+   font-weight: 600;
+   text-align: left;
+ }
+ .paragraph {
+   font-family: 'Inter' sans-serif;
+   font-size: 2rem;
+   font-weight: 300;
+   line-height: 1.87rem;
+   text-align: left;
+   padding-top: 3rem;
+ }
+ .picture {
+   border-radius: 1.25rem;
+   margin-top: 4rem;
+  }
+  a {
+   font-family: 'Inter' sans-serif;
+   font-size: 2rem;
+   font-weight: 300;
+   color: #ffffff;
+   cursor: pointer;
+  }
+  .link {
+   padding-top: 3rem;
+  }
+ .lower-part {
+   background-image: url("./camera\ \(18\).jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .form {
+   width: 100%;
+   background: rgba(255, 255, 255, 0.05);
+   display: flex;
+   margin-bottom: 10rem;
+   margin-top: 10rem;
+   margin-left: 5rem;
+   margin-right: 5rem;
+   position:relative;
+ }
+ .form_left {
+   flex: 1 0 50%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 6rem ;
+   margin-bottom: 8rem ;
+ }
+ .vertical-line {
+   border-left: 2px solid rgba(229, 229, 229, 0.6);
+   height: 100%;
+   position: absolute;
+   left: 50%;
+   top: 0;
+ }
+ .fill {
+   font-family: 'Inter' sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 2rem;
+   color: #e5e5e5;
+ }
+ input {
+   background-color: transparent;
+   border: none; 
+   border-bottom: 2px solid rgba(229, 229, 229, 0.6);
+   font-family: 'Inter' sans-serif;
+   font-size: 1.8rem;
+   font-weight: 400;
+   text-align: left;
+   color: #ffffff;
+   margin-top: 4rem;
+ }
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+   -webkit-appearance:none;
+   margin: 0;
+ }
+ input[type=number] {
+   -moz-appearance: textfield;
+ }
+ input:focus,
+ select:focus {
+   outline: none;
+ }
+ select {
+   border: none;
+   color: #8e8e8e;
+   background: transparent;
+   font-size: 2rem;
+   border-bottom:2px solid rgba(229, 229, 229, 0.6) ;
+   margin-top: 5rem;
+ }
+ label {
+   color: rgba(229, 229, 229, 0.6);
+   font-size: 2rem;
+ }
+ .state {
+   margin-left: 3rem;
+ }
+ .gender {
+   width: 2rem;
+   min-height: 2rem;
+   accent-color: #57bf37;
+ }
+ .gender-div {
+   width: 80%;
+   white-space: nowrap;
+   display: flex;
+   justify-content: center;
+   gap: 6rem;
+ }
+ .form_right {
+   flex: 1 0 50%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 7rem;
+ }
+ .label {
+   font-family: 'Inter' sans-serif;
+   font-weight: 400;
+   font-size: 1.8rem;
+   padding-top: 6rem;
+ }
+ .discription {
+   display: flex;
+   flex-direction: column;
+ }
+ textarea {
+   background: rgba(196, 196, 196, 0.04);
+   border: 1px solid rgba(229, 229, 229, 0.51);
+   border-radius: 10px;
+   min-height: 10rem;
+   width: 26rem;
+   padding: 1rem;
+   font-size: 1.3rem;
+   color: #ffffff;
+ }
+ textarea:focus {
+   outline: none;
+ }
+ .label-two {
+   font-family: 'Inter' sans-serif;
+   font-weight: 500;
+   font-size: 2rem;
+   margin-top: 6rem;
+   color: #ffffff;
+ }
+ .Card {
+   background-color: transparent;
+   border: none; 
+   border-bottom: 2px solid rgba(229, 229, 229, 0.6);
+   font-family: 'Inter' sans-serif;
+   font-size: 1.8rem;
+   font-weight: 500;
+   text-align: left;
+   color: rgba(229, 229, 229, 0.6);
+   margin-top: 6rem;
+   width: 70%;
+ }
+ .terms {
+   font-family: 'Inter';
+   font-weight: 500;
+   font-size: 1.8rem;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #13aaff;
+   margin-top: 0.8rem;
+ }
+ .checkbox {
+   accent-color: #57bf37;
+ }
+ .submit {
+   width: 40%;
+   min-height: 4rem;
+   color: #ffffff;
+   background: #57bf37;
+   border-radius: 3rem;
+   border: none;
+   font-size: 1.8rem;
+   margin-top: 6rem;
+   cursor: pointer;
+ }
+ .cancel {
+   width: 40%;
+   min-height: 4rem;
+   color: #ffffff;
+   background: #000000;
+   border-radius: 3rem;
+   border: none;
+   font-size: 1.8rem;
+   margin-top: 6rem;
+   margin-left: 4rem;
+   cursor: pointer;
+ }
+ .submit:hover {
+   box-shadow: 3px 3px 5px 3px #008000;
+   color: #0000ff;
+ }
+ .cancel:hover {
+   box-shadow: 3px 3px 5px 3px rgba(229, 229, 229, 0.6);
+   color: #ff0000;
+ }
+ .contest  {
+   margin-top: 3rem;
+   width: 62.5%;
+ }
+ .name,
+ .mail,
+ .number {
+   width: 60%;
+ }
+ .street-address {
+   width: 50%;
+ }
+ .address-two {
+   width: 43%;
+ }
+ .fill-area {
+   width: 90%;
+ }
+ .zip {
+   margin-left: 5.7rem;
+   width: 12.8rem;
+ }
+ .button {
+   margin-bottom: 2rem;
+ }
+ .form-fill {
+   padding-left: 8rem;
+   margin-top: 1rem;
+ }
+ .form-fill-two {
+   padding-left: 5rem;
+ }
+ .name,
+ .mail,
+ .number,
+ .Card,
+ .street-address,
+ .address-two,
+ .zip,
+ select {
+   padding-bottom: 1rem;
+ }
