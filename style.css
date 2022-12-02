@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -5,6 +7,7 @@
  body {
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
  }
  .total {
    height: 100vh;
@@ -29,9 +32,10 @@
    padding-top: 2rem;
    padding-bottom: 2rem;
    min-height: 6rem;
+   z-index: 10;
  }
  .awards {
-   font-family: 'Arsenal', sans-serif;
+   font-family: 'Arsenal';
    font-size: 3.25rem;
    font-weight: 500;
    text-align: left;
@@ -41,14 +45,14 @@
  }
  .second-item {
    display: flex;
-   justify-content: space-between;
-   width: 50%;
+   justify-content: space-around;
+   width: 45%;
    cursor: pointer;
  }
  .about_us,
  .contact,
  .sign_in {
-   font-family: 'Arsenal', sans-serif;
+   font-family: 'Arsenal';
    font-size: 1.86rem;
    font-weight: 400;
    font-style: normal;
@@ -58,7 +62,6 @@
    padding-right: 3rem;
  }
  .competition {
-   font-family: 'Inter', sans-serif;
    font-size: 1.86rem;
    font-weight: 700;
    text-align: left;
@@ -83,16 +86,14 @@
    margin-top: 13rem;
  }
  .tittle {
-   font-family: 'Inter', sans-serif;
    font-size: 3.5rem;
    font-weight: 600;
    text-align: left;
  }
  .paragraph {
-   font-family: 'Inter' sans-serif;
-   font-size: 2rem;
+   font-size: 1.8rem;
    font-weight: 300;
-   line-height: 1.87rem;
+   line-height: 1.8rem;
    text-align: left;
    padding-top: 3rem;
  }
@@ -101,7 +102,6 @@
    margin-top: 4rem;
   }
   a {
-   font-family: 'Inter' sans-serif;
    font-size: 2rem;
    font-weight: 300;
    color: #ffffff;
@@ -118,6 +118,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   z-index: 1;
  }
  .form {
    width: 100%;
@@ -144,17 +145,15 @@
    top: 0;
  }
  .fill {
-   font-family: 'Inter' sans-serif;
    font-style: normal;
    font-weight: 600;
-   font-size: 2rem;
+   font-size: 1.8rem;
    color: #e5e5e5;
  }
  input {
    background-color: transparent;
    border: none; 
    border-bottom: 2px solid rgba(229, 229, 229, 0.6);
-   font-family: 'Inter' sans-serif;
    font-size: 1.8rem;
    font-weight: 400;
    text-align: left;
@@ -181,10 +180,6 @@
    border-bottom:2px solid rgba(229, 229, 229, 0.6) ;
    margin-top: 5rem;
  }
- label {
-   color: rgba(229, 229, 229, 0.6);
-   font-size: 2rem;
- }
  .state {
    margin-left: 3rem;
  }
@@ -192,6 +187,8 @@
    width: 2rem;
    min-height: 2rem;
    accent-color: #57bf37;
+   font-size: 1.8rem;
+   color: rgba(229, 229, 229, 0.6);
  }
  .gender-div {
    width: 80%;
@@ -207,10 +204,10 @@
    margin-top: 7rem;
  }
  .label {
-   font-family: 'Inter' sans-serif;
    font-weight: 400;
    font-size: 1.8rem;
    padding-top: 6rem;
+   color: rgba(229, 229, 229, 0.6);
  }
  .discription {
    display: flex;
@@ -230,7 +227,6 @@
    outline: none;
  }
  .label-two {
-   font-family: 'Inter' sans-serif;
    font-weight: 500;
    font-size: 2rem;
    margin-top: 6rem;
@@ -240,16 +236,14 @@
    background-color: transparent;
    border: none; 
    border-bottom: 2px solid rgba(229, 229, 229, 0.6);
-   font-family: 'Inter' sans-serif;
    font-size: 1.8rem;
    font-weight: 500;
    text-align: left;
-   color: rgba(229, 229, 229, 0.6);
+   color: #ffffff;
    margin-top: 6rem;
    width: 70%;
  }
  .terms {
-   font-family: 'Inter';
    font-weight: 500;
    font-size: 1.8rem;
    display: flex;
@@ -261,6 +255,7 @@
  .checkbox {
    accent-color: #57bf37;
  }
+
  .submit {
    width: 40%;
    min-height: 4rem;
@@ -318,10 +313,12 @@
    margin-bottom: 2rem;
  }
  .form-fill {
+   width: 100%;
    padding-left: 8rem;
    margin-top: 1rem;
  }
  .form-fill-two {
+   width: 100%;
    padding-left: 5rem;
  }
  .name,
@@ -334,3 +331,145 @@
  select {
    padding-bottom: 1rem;
  }
+ label {
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding-top: 6rem;
+  color: rgba(229, 229, 229, 0.6);
+}
+textarea {
+  margin-top: 1.3rem ;
+}
+ 
+@media screen and (max-width: 700px) {
+  .welcome_para {
+    margin-right: 1rem;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 6rem);
+  }
+  .navigation {
+    width: 100vw;
+  }
+  .navbar {
+    width: 100vw;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+  }
+  .welcome_para {
+    margin: 3rem auto;
+  }
+  .picture {
+    margin: 1rem auto;
+  }
+  .awards {
+    font-family: 'Arsenal';
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+ .about_us,
+ .contact,
+ .sign_in {
+   font-family: 'Arsenal';
+   font-size: 0.86rem;
+   font-weight: 300;
+ }
+ .competition {
+  font-family: 'Inter';
+  font-size: 0.86rem;
+  font-weight: 600;
+ }
+ .navigation {
+  min-height: 6rem;
+ }
+ .total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .form-fill {
+  width: 50vw;
+  padding-left: 2rem;
+  margin-top: 1rem;
+ }
+.form-fill-two {
+  width: 50vw;
+  padding-left: 2rem;
+ }
+ input {
+  font-size: 1rem;
+  font-weight: 400;
+ }
+ .tittle {
+  font-size: 2.5rem;
+  font-weight: 500;
+ }
+ .paragraph {
+  font-size: 1rem;
+   font-weight: 200;
+ }
+ a {
+  font-size: 1rem;
+   font-weight: 300;
+ }
+ select {
+  font-size: 1rem;
+ }
+ .Card {
+  font-size: 1rem;
+  font-weight: 300;
+ }
+ .zip {
+  width: 6.4rem;
+  margin-left: 3.7rem;
+ }
+ .fill {
+  font-size: 1rem;
+ }
+ .label-two {
+  font-size: 1rem;
+ }
+ textarea {
+  min-height: 8rem;
+   width: 18rem;
+   font-size: 0.8rem;
+   border-radius: 5px;
+ }
+ .submit,
+ .cancel {
+  font-size: 1.3rem;
+  width: 34%;
+  margin-top: 3rem;
+ }
+ .cancel {
+  margin-left: 1rem;
+ }
+ .label {
+  font-weight: 300;
+   font-size: 1rem;
+ }
+ label {
+  font-weight: 300;
+  font-size: 1.5rem;
+ }
+ .gender {
+  font-size: 1.5rem;
+ }
+ .terms {
+  font-weight: 400;
+   font-size: 1.3rem;
+ }
+ .form {
+  width: 100vh;
+ }
+}
