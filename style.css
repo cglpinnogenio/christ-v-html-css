@@ -222,6 +222,7 @@
    padding: 1rem;
    font-size: 1.3rem;
    color: #ffffff;
+   resize: none;
  }
  textarea:focus {
    outline: none;
