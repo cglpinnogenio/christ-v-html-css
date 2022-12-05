@@ -17,22 +17,23 @@
    justify-content: center;
  }
  .navigation {
-   position: relative;
    min-height: 8rem;
    background-color: #000000;
  }
  .navbar {
-   width: 100%;
-   background-color: #000000;
-   color: #ffffff;
-   display: flex;
-   justify-content: space-between;
-   align-items: baseline;
-   position: fixed;
-   padding-top: 2rem;
-   padding-bottom: 2rem;
-   min-height: 6rem;
-   z-index: 10;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 6rem;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
  }
  .awards {
    font-family: 'Arsenal';
@@ -50,8 +51,7 @@
    cursor: pointer;
  }
  .about_us,
- .contact,
- .sign_in {
+ .contact {
    font-family: 'Arsenal';
    font-size: 1.86rem;
    font-weight: 400;
@@ -60,6 +60,10 @@
  }
  .sign_in {
    padding-right: 3rem;
+   font-size: 1.86rem;
+   font-weight: 400;
+   font-style: italic;
+   cursor: pointer;
  }
  .competition {
    font-size: 1.86rem;
@@ -72,9 +76,11 @@
  }
  .upper-part {
     background-color: #000000;
+    display: flex;
+    justify-content: center;
  }
  .details {
-   width: 97%;
+   width: 90%;
    display: flex;
    justify-content: space-between;
    padding-bottom: 8rem;
@@ -91,8 +97,8 @@
    text-align: left;
  }
  .paragraph {
-   font-size: 1.8rem;
-   font-weight: 300;
+   font-size: 1.6rem;
+   font-weight: 200;
    line-height: 1.8rem;
    text-align: left;
    padding-top: 3rem;
@@ -344,31 +350,33 @@ textarea {
  
 @media screen and (max-width: 700px) {
   .welcome_para {
-    margin-right: 1rem;
+    margin: 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .details {
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
   }
   .wrapper {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 6rem);
   }
   .navigation {
-    width: 100vw;
+    width: 100%;
   }
   .navbar {
-    width: 100vw;
+    width: 100%;
     background-color: #000000;
     color: #ffffff;
     display: flex;
     gap: 2rem;
     align-items: baseline;
-  }
-  .welcome_para {
-    margin: 3rem auto;
   }
   .picture {
     margin: 1rem auto;
@@ -399,65 +407,70 @@ textarea {
   justify-content: center;
  }
  .form-fill {
-  width: 50vw;
-  padding-left: 2rem;
+  width: 130%;
   margin-top: 1rem;
  }
 .form-fill-two {
-  width: 50vw;
-  padding-left: 2rem;
+  width: 130%;
+  margin-top: 0.5rem;
  }
  input {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 400;
  }
  .tittle {
   font-size: 2.5rem;
   font-weight: 500;
+  text-align: center;
  }
  .paragraph {
   font-size: 1rem;
-   font-weight: 200;
+  font-weight: 200;
+  text-align: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
  }
  a {
   font-size: 1rem;
-   font-weight: 300;
+  font-weight: 300;
+ }
+ .picture {
+  padding-top: 1rem;
  }
  select {
-  font-size: 1rem;
+  font-size: 2rem;
  }
  .Card {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 300;
  }
  .zip {
-  width: 6.4rem;
-  margin-left: 3.7rem;
+  width: 12rem;
  }
  .fill {
-  font-size: 1rem;
+  font-size: 2rem;
  }
  .label-two {
-  font-size: 1rem;
+  font-size: 2rem;
  }
  textarea {
-  min-height: 8rem;
-   width: 18rem;
-   font-size: 0.8rem;
+   min-height: 10rem;
+   width: 20rem;
+   font-size: 1rem;
    border-radius: 5px;
  }
  .submit,
  .cancel {
-  font-size: 1.3rem;
-  width: 34%;
+  font-size: 1.5rem;
+  width: 70%;
   margin-top: 3rem;
  }
  .cancel {
-  margin-left: 1rem;
+  margin-left: 0.1rem;
  }
  .label {
   font-weight: 300;
-   font-size: 1rem;
+  font-size: 2rem;
  }
  label {
   font-weight: 300;
@@ -468,9 +481,39 @@ textarea {
  }
  .terms {
   font-weight: 400;
-   font-size: 1.3rem;
+  font-size: 1.6rem;
  }
  .form {
-  width: 100vh;
+  width: 100%;
+  margin: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .vertical-line {
+  display: none;
+  visibility: hidden;
+ }
+ .form_left,
+ .form_right {
+  flex: 100%;
+ }
+ .fill-area {
+  width: 100%;
+ }
+ .city-state,
+ .country-code {
+  display: flex;
+  flex-direction: column;
+ }
+ .state,
+ .zip {
+  margin-left: 0rem;
+ }
+ .gender-div {
+  padding-left: 0rem;
+ }
+ .contest-div {
+  width: 115%;
  }
 }
