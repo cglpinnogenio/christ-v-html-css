@@ -5,23 +5,29 @@
     font-size: 62.5%;
  }
  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
  }
  .total {
-   height: 100vh;
-   max-width: 150rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
- }
- .navigation {
-   min-height: 8rem;
-   background-color: #000000;
+  height: 100vh;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
  }
  .navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+ }
+ .navigation {
   width: 100%;
+  min-height: 8rem;
+  background-color: #000000;
+  position: relative;
   background-color: #000000;
   color: #ffffff;
   display: flex;
@@ -30,11 +36,9 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   min-height: 6rem;
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
+  z-index: 50;
  }
+
  .awards {
    font-family: 'Arsenal';
    font-size: 3.25rem;
@@ -45,45 +49,46 @@
    cursor: pointer;
  }
  .second-item {
-   display: flex;
-   justify-content: space-around;
-   width: 45%;
-   cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  cursor: pointer;
  }
  .about_us,
  .contact {
-   font-family: 'Arsenal';
-   font-size: 1.86rem;
-   font-weight: 400;
-   font-style: normal;
-   cursor: pointer;
+  font-family: 'Arsenal';
+  font-size: 1.86rem;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
  }
  .sign_in {
-   padding-right: 3rem;
-   font-size: 1.86rem;
-   font-weight: 400;
-   font-style: italic;
-   cursor: pointer;
+  padding-right: 3rem;
+  font-size: 1.86rem;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
  }
  .competition {
-   font-size: 1.86rem;
-   font-weight: 700;
-   text-align: left;
-   cursor: pointer;
+  font-size: 1.86rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
  }
  .wrapper {
-    min-height: calc(100vh - 8rem);
+  min-height: calc(100vh - 8rem);
  }
  .upper-part {
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
  }
  .details {
    width: 90%;
    display: flex;
    justify-content: space-between;
    padding-bottom: 8rem;
+   padding-top: 10rem;
  }
  .welcome_para {
    width: 46%;
@@ -135,6 +140,7 @@
    margin-left: 5rem;
    margin-right: 5rem;
    position:relative;
+   z-index: 10;
  }
  .form_left {
    flex: 50%;
@@ -348,9 +354,9 @@ textarea {
   margin-top: 1.3rem ;
 }
  
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .welcome_para {
-    margin: 0rem;
+    margin: 0rem 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -359,6 +365,8 @@ textarea {
   .details {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 4rem;
   }
   .wrapper {
@@ -369,17 +377,17 @@ textarea {
   }
   .navigation {
     width: 100%;
+    min-height: 6rem;
+    z-index: 50;
   }
   .navbar {
-    width: 100%;
+    width: 99vw;
     background-color: #000000;
     color: #ffffff;
     display: flex;
     gap: 2rem;
     align-items: baseline;
-  }
-  .picture {
-    margin: 1rem auto;
+    z-index: 50;
   }
   .awards {
     font-family: 'Arsenal';
@@ -398,13 +406,12 @@ textarea {
   font-size: 0.86rem;
   font-weight: 600;
  }
- .navigation {
-  min-height: 6rem;
- }
+
  .total {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 5;
  }
  .form-fill {
   width: 130%;
@@ -489,6 +496,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 10;
  }
  .vertical-line {
   display: none;
@@ -516,4 +524,95 @@ textarea {
  .contest-div {
   width: 115%;
  }
+ .form-fill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-fill-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+}
+
+
+@media screen and (max-width: 468px) {
+  .picture {
+    width: 280px;
+   }
+   .form {
+    width: 100%;
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+   }
+   .navigation {
+    width: 100%;
+    z-index: 50;
+  }
+  .navbar {
+    width: 99vw;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+    z-index: 50;
+  }
+  .awards {
+    font-family: 'Arsenal';
+    font-size: 1rem;
+    font-weight: 300;
+  }
+ .about_us,
+ .contact,
+ .sign_in {
+    font-family: 'Arsenal';
+    font-size: 0.56rem;
+    font-weight: 400;
+ }
+ .competition {
+    font-family: 'Inter';
+    font-size: 0.56rem;
+    font-weight: 200;
+ }
+ .form-fill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+.form-fill-two {
+  padding-left: 8rem;
+}
+input {
+  font-size: 1rem;
+  font-weight: 300;
+ }
+ .city,
+ .state,
+ .country,
+ .contest,
+ .Card,
+ .label,
+ .terms {
+  font-size: 1rem;
+  font-weight: 300;
+ }
+ .label-two {
+  font-size: 1.2rem;
+  font-weight: 300;
+ }
+ .fill {
+  font-size: 1.5rem;
+  font-weight: 400;
+ }
+ textarea {
+  min-height: 8rem;
+  width: 15rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
 }
