@@ -9,42 +9,41 @@
   padding: 0;
   font-family: 'Inter';
  }
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
  .total {
-  height: 100vh;
-  max-width: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
  }
  .navbar {
+  background-color: #000000;
+  color: #ffffff;
   width: 100vw;
+  z-index: 50;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 50;
  }
  .navigation {
   width: 100%;
-  min-height: 8rem;
-  background-color: #000000;
   position: relative;
-  background-color: #000000;
-  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  min-height: 6rem;
+  min-height: 8rem;
   z-index: 50;
  }
-
  .awards {
    font-family: 'Arsenal';
    font-size: 3.25rem;
    font-weight: 500;
    text-align: left;
-   color: #ffffff;
    padding-left: 3rem;
    cursor: pointer;
  }
@@ -65,7 +64,7 @@
  .sign_in {
   padding-right: 3rem;
   font-size: 1.86rem;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
   cursor: pointer;
  }
@@ -74,9 +73,6 @@
   font-weight: 700;
   text-align: left;
   cursor: pointer;
- }
- .wrapper {
-  min-height: calc(100vh - 8rem);
  }
  .upper-part {
   background-color: #000000;
@@ -121,6 +117,7 @@
   .link {
    padding-top: 3rem;
   }
+
  .lower-part {
    background-image: url("./images/camera\ \(18\).jpg");
    background-repeat: no-repeat;
@@ -129,17 +126,13 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   z-index: 1;
  }
  .form {
-   width: 100%;
    background: rgba(255, 255, 255, 0.05);
-   display: flex;
-   margin-bottom: 10rem;
-   margin-top: 10rem;
-   margin-left: 5rem;
-   margin-right: 5rem;
    position:relative;
+   width: 100%;
+   display: flex;
+   margin: 10rem 5rem;
    z-index: 10;
  }
  .form_left {
@@ -157,9 +150,9 @@
    top: 0;
  }
  .fill {
+   font-size: 1.8rem;
    font-style: normal;
    font-weight: 600;
-   font-size: 1.8rem;
    color: #e5e5e5;
  }
  input {
@@ -171,6 +164,7 @@
    text-align: left;
    color: #ffffff;
    margin-top: 4rem;
+   width: 100%;
  }
  input::-webkit-outer-spin-button,
  input::-webkit-inner-spin-button {
@@ -208,12 +202,13 @@
    display: flex;
    justify-content: flex-start;
    gap: 5rem;
+   margin-top: 4rem;
  }
  .form_right {
-   flex: 50%;
-   display: flex;
-   flex-direction: column;
-   margin-top: 7rem;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
  }
  .label {
    font-weight: 400;
@@ -268,7 +263,6 @@
  .checkbox {
    accent-color: #57bf37;
  }
-
  .submit {
    width: 40%;
    min-height: 4rem;
@@ -288,8 +282,7 @@
    border-radius: 3rem;
    border: none;
    font-size: 1.8rem;
-   margin-top: 6rem;
-   margin-left: 4rem;
+   margin: 6rem 4rem;
    cursor: pointer;
  }
  .submit:hover {
@@ -302,7 +295,7 @@
  }
  .contest  {
    margin-top: 3rem;
-   width: 62.5%;
+   width: 68.5%;
  }
  .name,
  .mail,
@@ -315,9 +308,6 @@
  .address-two {
    width: 43%;
  }
- .fill-area {
-   width: 90%;
- }
  .zip {
    margin-left: 5.7rem;
    width: 12.8rem;
@@ -326,12 +316,9 @@
    margin-bottom: 2rem;
  }
  .form-fill {
-   width: 100%;
    padding-left: 8rem;
-   margin-top: 1rem;
  }
  .form-fill-two {
-   width: 100%;
    padding-left: 5rem;
  }
  .name,
@@ -341,89 +328,69 @@
  .street-address,
  .address-two,
  .zip,
- select {
+  select {
    padding-bottom: 1rem;
  }
  label {
   font-weight: 400;
   font-size: 1.8rem;
-  padding-top: 6rem;
-  color: rgba(229, 229, 229, 0.6);
+  color: #8e8e8e;
 }
 textarea {
   margin-top: 1.3rem ;
 }
  
-@media screen and (max-width: 768px) {
-  .welcome_para {
-    margin: 0rem 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-  }
-  .wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - 6rem);
-  }
-  .navigation {
-    width: 100%;
-    min-height: 6rem;
-    z-index: 50;
-  }
-  .navbar {
-    width: 99vw;
-    background-color: #000000;
-    color: #ffffff;
-    display: flex;
-    gap: 2rem;
-    align-items: baseline;
-    z-index: 50;
-  }
-  .awards {
-    font-family: 'Arsenal';
-    font-size: 1.25rem;
-    font-weight: 300;
-  }
- .about_us,
- .contact,
- .sign_in {
-   font-family: 'Arsenal';
-   font-size: 0.86rem;
-   font-weight: 300;
+@media screen and (max-width: 750px) {
+ .welcome_para {
+  margin: 0rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  }
- .competition {
-  font-family: 'Inter';
-  font-size: 0.86rem;
-  font-weight: 600;
- }
-
- .total {
+ .details {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 5;
+  align-items: center;
+  margin-top: 4rem;
+  }
+ .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 8rem);
+  }
+ .navbar {
+  display: flex;
+  gap: 2rem;
+  align-items: baseline;
+  }
+ .awards {
+  font-size: 2.25rem;
+  font-weight: 400;
+ }
+ .about_us,
+ .contact,
+ .sign_in {
+  font-family: 'Arsenal';
+  font-size: 1rem;
+  font-weight: 300;
+ }
+ .competition {
+  font-size: 1rem;
+  font-weight: 600;
  }
  .form-fill {
-  width: 130%;
+  width: 100%;
   margin-top: 1rem;
  }
-.form-fill-two {
-  width: 130%;
-  margin-top: 0.5rem;
+ .form-fill-two {
+  width: 100%;
+  margin-top: 0rem;
  }
  input {
   font-size: 2rem;
-  font-weight: 400;
  }
  .tittle {
   font-size: 2.5rem;
@@ -431,15 +398,13 @@ textarea {
   text-align: center;
  }
  .paragraph {
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 1.5rem;
   text-align: center;
   padding-right: 2rem;
   padding-left: 2rem;
  }
  a {
   font-size: 1rem;
-  font-weight: 300;
  }
  .picture {
   padding-top: 1rem;
@@ -452,19 +417,16 @@ textarea {
   font-weight: 300;
  }
  .zip {
-  width: 12rem;
+  width: 11rem;
  }
  .fill {
   font-size: 2rem;
  }
- .label-two {
-  font-size: 2rem;
- }
  textarea {
-   min-height: 10rem;
-   width: 20rem;
-   font-size: 1rem;
-   border-radius: 5px;
+  min-height: 10rem;
+  width: 20rem;
+  font-size: 1rem;
+  border-radius: 5px;
  }
  .submit,
  .cancel {
@@ -491,12 +453,9 @@ textarea {
   font-size: 1.6rem;
  }
  .form {
-  width: 100%;
   margin: 5rem 2rem;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 10;
  }
  .vertical-line {
   display: none;
@@ -507,7 +466,7 @@ textarea {
   flex: 100%;
  }
  .fill-area {
-  width: 100%;
+  width: 130%;
  }
  .city-state,
  .country-code {
@@ -520,6 +479,7 @@ textarea {
  }
  .gender-div {
   padding-left: 0rem;
+  margin-top: 2rem;
  }
  .contest-div {
   width: 115%;
@@ -528,12 +488,26 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.form-fill-two {
+ }
+ .form-fill-two {
   display: flex;
   flex-direction: column;
   justify-content: center;
-} 
+ } 
+ .form_left {
+  margin: 1rem auto;
+ }
+ .form_right {
+  margin: 4rem auto;
+ }
+ .container {
+  flex-direction: column;
+ }
+ .checkbox {
+  display: grid;
+  align-self: start ;
+  justify-items: center;
+}
 }
 
 
@@ -549,22 +523,9 @@ textarea {
     align-items: flex-start;
     z-index: 10;
    }
-   .navigation {
-    width: 100%;
-    z-index: 50;
-  }
-  .navbar {
-    width: 99vw;
-    background-color: #000000;
-    color: #ffffff;
-    display: flex;
-    gap: 2rem;
-    align-items: baseline;
-    z-index: 50;
-  }
   .awards {
     font-family: 'Arsenal';
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 300;
   }
  .about_us,
@@ -572,22 +533,13 @@ textarea {
  .sign_in {
     font-family: 'Arsenal';
     font-size: 0.56rem;
-    font-weight: 400;
+    font-weight: 300;
  }
  .competition {
-    font-family: 'Inter';
     font-size: 0.56rem;
     font-weight: 200;
  }
- .form-fill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} 
-.form-fill-two {
-  padding-left: 8rem;
-}
-input {
+ input {
   font-size: 1rem;
   font-weight: 300;
  }
@@ -614,5 +566,11 @@ input {
   width: 15rem;
   font-size: 0.9rem;
   border-radius: 5px;
-}
+ }
+ .fill-area {
+  width: 100%;
+ }
+ .contest-div {
+  width: 115%;
+ }
 }
