@@ -41,7 +41,7 @@
  }
  .awards {
    font-family: 'Arsenal';
-   font-size: 3.25rem;
+   font-size: 4.25rem;
    font-weight: 500;
    text-align: left;
    padding-left: 3rem;
@@ -49,27 +49,26 @@
  }
  .second-item {
   display: flex;
-  justify-content: space-around;
-  width: 45%;
+  gap: 6rem ;
   cursor: pointer;
  }
  .about_us,
  .contact {
   font-family: 'Arsenal';
-  font-size: 1.86rem;
+  font-size: 2.36rem;
   font-weight: 400;
   font-style: normal;
   cursor: pointer;
  }
  .sign_in {
   padding-right: 3rem;
-  font-size: 1.86rem;
+  font-size: 2.36rem;
   font-weight: 300;
   font-style: italic;
   cursor: pointer;
  }
  .competition {
-  font-size: 1.86rem;
+  font-size: 2.36rem;
   font-weight: 700;
   text-align: left;
   cursor: pointer;
@@ -93,14 +92,14 @@
    margin-top: 13rem;
  }
  .tittle {
-   font-size: 3.5rem;
+   font-size: 3.7rem;
    font-weight: 600;
    text-align: left;
  }
  .paragraph {
-   font-size: 1.6rem;
+   font-size: 2rem;
    font-weight: 200;
-   line-height: 1.8rem;
+   line-height: 2.3rem;
    text-align: left;
    padding-top: 3rem;
  }
@@ -339,8 +338,13 @@
 textarea {
   margin-top: 1.3rem ;
 }
+.menu {
+  visibility: none;
+  display: none;
+  cursor: pointer;
+}
  
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
  .welcome_para {
   margin: 0rem 2rem;
   width: 100%;
@@ -367,44 +371,48 @@ textarea {
   align-items: baseline;
   }
  .awards {
-  font-size: 2.25rem;
+  font-size: 3.5rem;
   font-weight: 400;
  }
  .about_us,
  .contact,
  .sign_in {
   font-family: 'Arsenal';
-  font-size: 1rem;
+  font-size: 2.1rem;
   font-weight: 300;
  }
  .competition {
-  font-size: 1rem;
+  font-size: 2.1rem;
   font-weight: 600;
  }
  .form-fill {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 1rem;
  }
  .form-fill-two {
-  width: 100%;
-  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2.5rem;
  }
  input {
   font-size: 2rem;
  }
  .tittle {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
   text-align: center;
  }
  .paragraph {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
   padding-right: 2rem;
   padding-left: 2rem;
  }
  a {
-  font-size: 1rem;
+  font-size: 1.8rem;
  }
  .picture {
   padding-top: 1rem;
@@ -430,7 +438,7 @@ textarea {
  }
  .submit,
  .cancel {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   width: 70%;
   margin-top: 3rem;
  }
@@ -443,14 +451,14 @@ textarea {
  }
  label {
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
  }
  .gender {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
  }
  .terms {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
  }
  .form {
   margin: 5rem 2rem;
@@ -508,10 +516,79 @@ textarea {
   align-self: start ;
   justify-items: center;
 }
+.second-item {
+  display: flex;
+  gap: 2rem;
+}
 }
 
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 650px) {
+  .picture {
+    width: 300px;
+   }
+   .form {
+    width: 100%;
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+   }
+  .awards {
+    font-family: 'Arsenal';
+    font-size: 2.3rem;
+    font-weight: 300;
+  }
+ .about_us,
+ .contact,
+ .sign_in {
+    font-family: 'Arsenal';
+    font-size: 1.3rem;
+    font-weight: 200;
+ }
+ .competition {
+    font-size: 1.3rem;
+    font-weight: 400;
+ }
+ input {
+  font-size: 1.5rem;
+  font-weight: 300;
+ }
+ .city,
+ .state,
+ .country,
+ .contest,
+ .Card,
+ .label,
+ .terms {
+  font-size: 1.6rem;
+  font-weight: 300;
+ }
+ .label-two {
+  font-size: 1.6rem;
+  font-weight: 300;
+ }
+ .fill {
+  font-size: 1.9rem;
+  font-weight: 400;
+ }
+ textarea {
+  min-height: 12rem;
+  width: 25rem;
+  font-size: 1.9rem;
+  border-radius: 5px;
+ }
+ .fill-area {
+  width: 100%;
+ }
+ .contest-div {
+  width: 100%;
+ }
+}
+
+
+@media screen and (max-width: 450px) {
   .picture {
     width: 280px;
    }
@@ -525,24 +602,13 @@ textarea {
    }
   .awards {
     font-family: 'Arsenal';
-    font-size: 1.25rem;
-    font-weight: 300;
+    font-size: 2.3rem;
+    font-weight: 400;
   }
- .about_us,
- .contact,
- .sign_in {
-    font-family: 'Arsenal';
-    font-size: 0.56rem;
-    font-weight: 300;
- }
- .competition {
-    font-size: 0.56rem;
-    font-weight: 200;
- }
- input {
-  font-size: 1rem;
-  font-weight: 300;
- }
+  input {
+   font-size: 1.5rem;
+   font-weight: 300;
+  }
  .city,
  .state,
  .country,
@@ -550,7 +616,7 @@ textarea {
  .Card,
  .label,
  .terms {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
  }
  .label-two {
@@ -564,13 +630,28 @@ textarea {
  textarea {
   min-height: 8rem;
   width: 15rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   border-radius: 5px;
  }
  .fill-area {
   width: 100%;
  }
  .contest-div {
-  width: 115%;
+  width: 100%;
+ }
+ .second-item,
+ .sign_in {
+  display: none;
+  visibility: hidden;
+ }
+ .menu {
+  display: flex;
+  padding-right: 2rem;
+ }
+ .form_left {
+  margin: 2rem;
+ }
+ .form_right {
+  margin: 2rem;
  }
 }
