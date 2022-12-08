@@ -9,15 +9,11 @@
   padding: 0;
   font-family: 'Inter';
  }
- .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
  .total {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
  }
  .navbar {
   background-color: #000000;
@@ -135,7 +131,7 @@
    z-index: 10;
  }
  .form_left {
-   flex: 50%;
+   flex: 100%;
    display: flex;
    flex-direction: column;
    margin-top: 6rem ;
@@ -201,10 +197,10 @@
    display: flex;
    justify-content: flex-start;
    gap: 5rem;
-   margin-top: 4rem;
+   margin-top: 3rem;
  }
  .form_right {
-  flex: 50%;
+  flex: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 7rem;
@@ -258,30 +254,36 @@
    text-align: center;
    color: #13aaff;
    margin-top: 0.8rem;
+   text-decoration: none;
  }
- .checkbox {
-   accent-color: #57bf37;
+ .checkbox-div {
+  margin-top: 2rem;
+ }
+ .check-box {
+   margin-top: 0rem;
+   width: auto;
+   accent-color: #57bf37 ;
  }
  .submit {
-   width: 40%;
+   width: 30%;
    min-height: 4rem;
    color: #ffffff;
    background: #57bf37;
    border-radius: 3rem;
    border: none;
    font-size: 1.8rem;
-   margin-top: 6rem;
+   margin-top: 8rem;
    cursor: pointer;
  }
  .cancel {
-   width: 40%;
+   width: 30%;
    min-height: 4rem;
    color: #ffffff;
    background: #000000;
    border-radius: 3rem;
    border: none;
    font-size: 1.8rem;
-   margin: 6rem 4rem;
+   margin: 8rem 4rem;
    cursor: pointer;
  }
  .submit:hover {
@@ -313,6 +315,7 @@
  }
  .button {
    margin-bottom: 2rem;
+   margin-left: 2rem;
  }
  .form-fill {
    padding-left: 8rem;
@@ -378,26 +381,15 @@ textarea {
  .contact,
  .sign_in {
   font-family: 'Arsenal';
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 300;
  }
  .competition {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 600;
  }
- .form-fill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 1rem;
- }
- .form-fill-two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 2.5rem;
- }
  input {
+  width: 100%;
   font-size: 2rem;
  }
  .tittle {
@@ -431,15 +423,15 @@ textarea {
   font-size: 2rem;
  }
  textarea {
-  min-height: 10rem;
-  width: 20rem;
+  min-height: 12rem;
+  width: 25rem;
   font-size: 1rem;
   border-radius: 5px;
  }
  .submit,
  .cancel {
   font-size: 1.8rem;
-  width: 70%;
+  width: 100%;
   margin-top: 3rem;
  }
  .cancel {
@@ -461,20 +453,46 @@ textarea {
   font-size: 1.9rem;
  }
  .form {
-  margin: 5rem 2rem;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+ }
+ .form_left,
+ .form_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 100%;
+ }
+ .form-fill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0rem;
+  margin-top: 1rem;
+ }
+ .form-fill-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0rem;
+ }
+ .fill-area {
+  width: 100%;
+ }
+ .form_right {
+  margin-top: 0rem;
+ }
+ .button {
+  margin-bottom: 1rem;
  }
  .vertical-line {
   display: none;
   visibility: hidden;
- }
- .form_left,
- .form_right {
-  flex: 100%;
- }
- .fill-area {
-  width: 130%;
  }
  .city-state,
  .country-code {
@@ -490,66 +508,60 @@ textarea {
   margin-top: 2rem;
  }
  .contest-div {
-  width: 115%;
- }
- .form-fill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- }
- .form-fill-two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- } 
- .form_left {
-  margin: 1rem auto;
- }
- .form_right {
-  margin: 4rem auto;
+  width: 100%;
  }
  .container {
   flex-direction: column;
  }
- .checkbox {
-  display: grid;
-  align-self: start ;
-  justify-items: center;
-}
 .second-item {
   display: flex;
   gap: 2rem;
-}
+ }
+ .name,
+ .mail,
+ .number,
+ .street-address,
+ .Card,
+ .contest,
+ .address-two {
+  width: 120%;
+ }
+ .city,
+ .state,
+ .country,
+ .zip {
+  width: 50%;
+ }
 }
 
 
 @media screen and (max-width: 650px) {
   .picture {
-    width: 300px;
-   }
-   .form {
-    width: 100%;
-    margin: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 10;
+   width: 100%;
+  }
+  .form {
+   width: 120%;
+   margin: 6rem 4rem;
+   z-index: 10;
+  }
+  .form_right {
+   margin-top: 1rem;
    }
   .awards {
     font-family: 'Arsenal';
     font-size: 2.3rem;
     font-weight: 300;
   }
- .about_us,
- .contact,
- .sign_in {
+  .about_us,
+  .contact,
+  .sign_in {
     font-family: 'Arsenal';
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 200;
  }
  .competition {
-    font-size: 1.3rem;
-    font-weight: 400;
+   font-size: 1.1rem;
+   font-weight: 400;
  }
  input {
   font-size: 1.5rem;
@@ -575,7 +587,7 @@ textarea {
  }
  textarea {
   min-height: 12rem;
-  width: 25rem;
+  width: 23rem;
   font-size: 1.9rem;
   border-radius: 5px;
  }
@@ -585,24 +597,31 @@ textarea {
  .contest-div {
   width: 100%;
  }
+ .submit,
+ .cancel {
+  font-size: 1.8rem;
+  width: 100%;
+  margin-top: 3rem;
+ }
+ .city,
+ .state,
+ .country,
+ .zip {
+  width: 60%;
+ }
+ .button {
+  margin-bottom: 0.5rem;
+ }
 }
 
 
 @media screen and (max-width: 450px) {
   .picture {
-    width: 280px;
-   }
-   .form {
     width: 100%;
-    margin: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 10;
    }
   .awards {
     font-family: 'Arsenal';
-    font-size: 2.3rem;
+    font-size: 3rem;
     font-weight: 400;
   }
   input {
@@ -616,16 +635,16 @@ textarea {
  .Card,
  .label,
  .terms {
-  font-size: 1.5rem;
-  font-weight: 300;
+   font-size: 1.5rem;
+   font-weight: 300;
  }
  .label-two {
-  font-size: 1.2rem;
-  font-weight: 300;
+   font-size: 1.2rem;
+   font-weight: 300;
  }
  .fill {
-  font-size: 1.5rem;
-  font-weight: 400;
+   font-size: 1.5rem;
+   font-weight: 400;
  }
  textarea {
   min-height: 8rem;
@@ -633,11 +652,8 @@ textarea {
   font-size: 1rem;
   border-radius: 5px;
  }
- .fill-area {
-  width: 100%;
- }
  .contest-div {
-  width: 100%;
+  width: 80%;
  }
  .second-item,
  .sign_in {
@@ -649,9 +665,46 @@ textarea {
   padding-right: 2rem;
  }
  .form_left {
-  margin: 2rem;
+  margin-top: 2rem;
  }
  .form_right {
-  margin: 2rem;
+  margin-top: 2rem;
  }
+ .form {
+  width: 100%;
+  margin: 3rem 2rem;
+ }
+ .submit,
+ .cancel {
+  font-size: 1.8rem;
+  width: 80%;
+  margin-top: 3rem;
+ }
+ .city,
+ .state,
+ .country,
+ .zip, {
+  width: 40%;
+ } 
+ .fill-area {
+  width: 80%;
+ }
+ .label-two {
+  font-size: 1.5rem;
+ }
+}
+
+
+@media screen (min-width: 850px) and (max-width: 945px) {
+  .awards {
+    font-size: 3.5rem;
+  }
+  .sign_in,
+  .about_us,
+  .contact {
+    font-size: 2rem;
+  }
+  .competition {
+    font-weight: 600;
+  }
 }
