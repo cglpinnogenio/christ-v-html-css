@@ -683,7 +683,7 @@ textarea {
  .city,
  .state,
  .country,
- .zip, {
+ .zip {
   width: 40%;
  } 
  .fill-area {
@@ -694,8 +694,7 @@ textarea {
  }
 }
 
-
-@media screen (min-width: 850px) and (max-width: 945px) {
+@media screen and (min-width: 850px) and (max-width: 945px) {
   .awards {
     font-size: 3.5rem;
   }
@@ -706,5 +705,18 @@ textarea {
   }
   .competition {
     font-weight: 600;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 670px) {
+  .awards {
+    font-size: 2.5rem;
+  }
+  .sign_in,
+  .about_us,
+  .contact {
+    font-size: 1.5rem;
+  }
+  .competition {
+    font-weight: 500;
   }
 }
