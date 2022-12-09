@@ -20,6 +20,7 @@
   color: #ffffff;
   width: 100vw;
   z-index: 50;
+  padding-top: 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -707,16 +708,16 @@ textarea {
     font-weight: 600;
   }
 }
-@media screen and (min-width: 650px) and (max-width: 670px) {
+@media screen and (min-width: 649px) and (max-width: 671px) {
   .awards {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   .sign_in,
   .about_us,
   .contact {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .competition {
-    font-weight: 500;
+    font-weight: 600;
   }
 }
